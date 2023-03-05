@@ -7,7 +7,7 @@ function ReadMoreButton({ article }) {
     const queryString = Object.entries(article).map(([key, value]) => `${key}=${value}`).join('&');
     const url = `/article?${queryString}`;
     
-    router.push(url.replace('#', ''));
+    router.push(url);
   }
 
   return (

@@ -29,7 +29,7 @@ function ArticlePage({ searchParams }) {
           <div className='flex divide-x-2 space-x-4'>
             <h2 className='font-bold'>By: {article.author || 'unknown'}</h2>
             <h2 className='font-bold pl-4'>Source: {article.source || 'unknown'}</h2>
-            <p className='pl-4'>{moment(article.published_at.split(' ')[0]).fromNow()}</p>
+            <p className='pl-4'>{moment(article.published_at?.split(' ')[0]).fromNow()}</p>
           </div>
 
           <p className='pt-4'>{article.description}</p>
